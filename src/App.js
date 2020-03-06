@@ -1,24 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import HelloUser from './components/HelloUser';
+import FriendsContainer from './components/FriendsContainer';
 
+//Because our FriendsContainer is the parent of our other containers,
+//All we need to return in the App.js is one JSX instance of our FriendsContainer.
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <FriendsContainer />
     </div>
   );
 }
